@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity"
+
+	>
+	<TextView
+		android:layout_marginTop="20dp"
+		android:layout_centerHorizontal="true"
+		android:textFontWeight="@integer/material_motion_duration_long_2"
+		android:fontFamily="sans-serif-condensed-medium"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Iris Flower Prediction"
+		android:id="@+id/title"
+		android:textSize="30sp"
+		android:textColor="@color/design_default_color_primary_dark"
+		/>
+<com.google.android.material.textfield.TextInputLayout
+	android:layout_centerHorizontal="true"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:hint="Sepal Length"
+	android:id="@+id/input1layout"
+	android:layout_below="@id/title"
+	android:padding="15dp"
+	android:layout_marginTop="20dp"
+>
+
+	<com.google.android.material.textfield.TextInputEditText
+		android:inputType="numberDecimal"
+		android:layout_width="300dp"
+		android:layout_height="wrap_content"
+		android:id="@+id/input1"
+		android:maxLength="3"
+		/>
+
+
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+	<com.google.android.material.textfield.TextInputLayout
+		android:layout_centerHorizontal="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:hint="Sepal Width"
+		android:id="@+id/input2layout"
+		android:layout_below="@id/input1layout"
+		android:padding="15dp"
+		>
+
+		<com.google.android.material.textfield.TextInputEditText
+			android:inputType="numberDecimal"
+			android:layout_width="300dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/input2"
+			android:maxLength="3"
+			/>
+
+
+
+
+	</com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+	<com.google.android.material.textfield.TextInputLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:hint="Petal Length"
+		android:id="@+id/input3layout"
+		android:padding="15dp"
+		android:layout_below="@id/input2layout"
+		>
+		<com.google.android.material.textfield.TextInputEditText
+			android:layout_margin="10dp"
+			android:layout_centerHorizontal="true"
+			android:layout_width="300dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/input3"
+			android:inputType="numberDecimal"
+			android:maxLength="3"
+			/>
+	</com.google.android.material.textfield.TextInputLayout>
+
+
+
+	<com.google.android.material.textfield.TextInputLayout
+		android:layout_centerHorizontal="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:hint="Petal Width"
+
+		android:id="@+id/input4layout"
+		android:padding="15dp"
+		android:layout_below="@id/input3layout"
+		>
+
+		<com.google.android.material.textfield.TextInputEditText
+			android:maxLength="3"
+			android:inputType="numberDecimal"
+			android:layout_width="300dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/input4"
+			/>
+	</com.google.android.material.textfield.TextInputLayout>
+
+
+
+	<Button
+		android:layout_marginTop="40dp"
+		android:layout_width="100dp"
+		android:layout_height="50dp"
+		android:layout_below="@id/input4layout"
+		android:layout_centerHorizontal="true"
+		android:text="Predict"
+		android:id="@+id/btn"/>
+
+	<TextView
+		android:id="@+id/opText"
+		android:layout_marginTop="40dp"
+		android:layout_centerHorizontal="true"
+		android:textSize="20sp"
+		android:layout_below="@id/btn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		tools:text="Hello World!"
+	 />
+
+</RelativeLayout>
